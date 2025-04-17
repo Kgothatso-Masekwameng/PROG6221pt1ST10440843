@@ -1,5 +1,5 @@
-﻿
-using System;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Media;
 
@@ -27,9 +27,13 @@ namespace PROG6221pt1
                 userName = "Cyber User";
             }
 
-            Console.WriteLine($"\nWelcome, {userName}! Ask me a cybersecurity question on Passwords, Phishing, and/or Safe Browsing. If not (Type 'Exit/Quit' to leave)\n");
+            Console.WriteLine($"\nWelcome, {userName}! Ask me a cybersecurity question on Passwords, Phishing, Privacy, and Safe Browsing. Type 'exit' or 'quit' to leave.\n");
 
-            // 4. Chat Loop
+            // ✅ 4. Initialize Memory
+            Dictionary<string, string> memory = new Dictionary<string, string>();
+            memory["name"] = userName;
+
+            // 5. Chat Loop
             while (true)
             {
                 Console.ForegroundColor = ConsoleColor.Yellow;
@@ -38,7 +42,7 @@ namespace PROG6221pt1
 
                 if (string.IsNullOrWhiteSpace(input))
                 {
-                    Console.WriteLine("Bot: I didn’t quite understand that. Could you rephrase? (Or type 'Exit/Quit' to leave)");
+                    Console.WriteLine("Bot: I didn’t quite understand that. Could you rephrase?");
                     continue;
                 }
 
@@ -49,7 +53,8 @@ namespace PROG6221pt1
                 }
 
                 Console.ForegroundColor = ConsoleColor.Green;
-                ResponseToUser.RespondToUser(input);
+                // ✅ Pass memory and userName to RespondToUser
+                ResponseToUser.RespondToUser(input, memory);
             }
 
             Console.ResetColor();
