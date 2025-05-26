@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Media;
 
-namespace PROG6221pt1
+namespace PROG6221
 {
     class Program
     {

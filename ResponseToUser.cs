@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PROG6221pt1
+namespace PROG6221
 {
     internal class ResponseToUser
     {

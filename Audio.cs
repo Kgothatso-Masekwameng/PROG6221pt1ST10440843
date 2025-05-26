@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Media;
 
-namespace PROG6221pt1
+namespace PROG6221
 {
     internal class Audio
     {
@@ -13,7 +13,7 @@ namespace PROG6221pt1
         {
             try
             {
-                string filePath = @"C:\Users\lab_services_student\Desktop\PROG6221pt1\PROG6221pt1\files\Greetings.wav";
+                string filePath = @"C:\Users\lab_services_student\Desktop\PROG6221\PROG6221\files\Greetings.wav";
                 SoundPlayer player = new SoundPlayer(filePath);
                player.PlaySync(); // or Play() if you don't want it to block
                 
