@@ -1,5 +1,5 @@
-# PROG6221pt1
-# 🛡️ Cybersecurity Awareness Bot - Part 1
+# PROG6221
+# 🛡️ Cybersecurity Awareness Bot -
 
 Welcome to the **Cybersecurity Awareness Bot**, a simple yet interactive command-line chatbot built in **C#**. This is Part 1 of a multi-phase Portfolio of Evidence (POE) project focused on promoting safe online practices through conversational interaction.
 
